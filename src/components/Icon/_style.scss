@@ -1,0 +1,7 @@
+// 插值语法在选择器和属性名中使用 Sass 的变量
+
+@each $key,$val in $theme-colors {
+    .icon-#{$key}{
+        color:$val
+    }
+}
