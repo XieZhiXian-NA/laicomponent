@@ -1,7 +1,7 @@
 import React from 'react';
 import {render, RenderResult} from '@testing-library/react';
 import Upload,{UploadProps} from './upload'
-import { fireEvent, waitFor, queryByText } from '@testing-library/dom';
+import { fireEvent, waitFor } from '@testing-library/dom';
 import axios from 'axios';
 
 jest.mock('../Icon/icon',()=>{

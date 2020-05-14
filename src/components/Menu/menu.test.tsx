@@ -1,5 +1,5 @@
 import React from 'react';
-import {render,RenderResult,fireEvent,cleanup,waitFor,wait} from '@testing-library/react';
+import {render,RenderResult,fireEvent} from '@testing-library/react';
 import "@testing-library/jest-dom/extend-expect";
 import Menu,{MenuProps} from './menu'
 import MenuItem from './menuItem'

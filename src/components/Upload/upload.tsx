@@ -1,7 +1,7 @@
-import React ,{FC,useRef,useState, ChangeEvent, Children}from 'react'
+import React ,{FC,useRef,useState, ChangeEvent}from 'react'
 import axios from 'axios';
 
-import Button from '../Button/button';
+// import Button from '../Button/button';
 import UploadList from './uploadList';
 import Dragger from './dragger';
 

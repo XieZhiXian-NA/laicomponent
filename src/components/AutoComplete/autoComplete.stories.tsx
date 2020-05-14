@@ -1,12 +1,12 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import AutoComplete,{DataSourceType} from './autoComplete'
-import { action } from '@storybook/addon-actions';
 
-interface LakerPlayProps {
-    value:string;
-    number?:number
-}
+
+// interface LakerPlayProps {
+//     value:string;
+//     number?:number
+// }
 
 interface GithubUserProps{
     login:string;

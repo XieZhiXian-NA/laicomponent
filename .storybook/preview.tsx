@@ -18,9 +18,14 @@ const storyWrapper = (stroyFn: any) => (
 addDecorator(storyWrapper)
 addDecorator(withInfo)
 addParameters({info: { inline: true, header: false}})
-const req = require.context('../src/components', true, /\.stories\.tsx$/);
+
 const loaderFn = () => {
- req.keys().forEach(filename=>req(filename))
+  const allExports = [require('../src/welcome.stories.tsx')];
+  const req = require.context('../src/components', true, /\.stories\.tsx$/);
+  //更改story的展示顺序
+  req.keys().forEach(filename=>allExports.push(req(filename)));
+  return allExports;
+ 
 };
 
 

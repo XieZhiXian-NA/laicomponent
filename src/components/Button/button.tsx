@@ -1,6 +1,5 @@
 import React,{FC,ButtonHTMLAttributes,AnchorHTMLAttributes}from 'react';
 import classnames from 'classnames'
-import { UploadProps } from '../Upload/upload';
 export type ButtonSize = 'lg' | 'sm'
 
 export type ButtonType =  'primary' | 'default' | 'danger' | 'link'

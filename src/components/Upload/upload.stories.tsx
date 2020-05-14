@@ -12,17 +12,17 @@ const defaultFileList: UploadFile[] = [
 
 
 
-const checkFile = (file:File)=>{
-       if(Math.round(file.size/1024)>50){
-           alert('file to big')
-          return false
-       }
-       return true
-}
-const filePromise = (file:File)=>{
-    const newFile = new File([file],'new_name.docx',{type:file.type});
-    return Promise.resolve(newFile);
-}
+// const checkFile = (file:File)=>{
+//        if(Math.round(file.size/1024)>50){
+//            alert('file to big')
+//           return false
+//        }
+//        return true
+// }
+// const filePromise = (file:File)=>{
+//     const newFile = new File([file],'new_name.docx',{type:file.type});
+//     return Promise.resolve(newFile);
+// }
 const SimpleUpload = ()=>{
     return (
         <Upload 

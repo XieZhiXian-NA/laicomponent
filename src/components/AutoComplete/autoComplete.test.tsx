@@ -1,5 +1,5 @@
 import React from 'react';
-import AutomComplete,{AutoCompleteProps, AutoComplete,DataSourceType} from './autoComplete';
+import {AutoCompleteProps, AutoComplete} from './autoComplete';
 import {render, RenderResult, fireEvent,waitFor, cleanup} from '@testing-library/react';
 import {config} from 'react-transition-group'
 
@@ -32,27 +32,27 @@ interface LakerPlayProps {
     number?:number
 }
 
-const renderGitOption = (item:DataSourceType)=>{
-    const itemWithGithub = item as DataSourceType<GithubUserProps>;
-    return (
-        <div title="render">
-            <h2>Name:{itemWithGithub.login}</h2>
-            <h4>url:{itemWithGithub.url}</h4>
-        </div>
+// const renderGitOption = (item:DataSourceType)=>{
+//     const itemWithGithub = item as DataSourceType<GithubUserProps>;
+//     return (
+//         <div title="render">
+//             <h2>Name:{itemWithGithub.login}</h2>
+//             <h4>url:{itemWithGithub.url}</h4>
+//         </div>
     
-    )
-}
+//     )
+// }
 
-const renderOption = (item:LakerPlayProps)=>{
-    const itemt = item as DataSourceType<LakerPlayProps>;
-    return (
-        <>
-            <h2>Name:{itemt.value}</h2>
-            <h4>url:{itemt.number}</h4>
-        </>
+// const renderOption = (item:LakerPlayProps)=>{
+//     const itemt = item as DataSourceType<LakerPlayProps>;
+//     return (
+//         <>
+//             <h2>Name:{itemt.value}</h2>
+//             <h4>url:{itemt.number}</h4>
+//         </>
     
-    )
-}
+//     )
+// }
 
 let wrapper:RenderResult,inputNode:HTMLInputElement;
 describe('test AutoComplete Component',()=>{

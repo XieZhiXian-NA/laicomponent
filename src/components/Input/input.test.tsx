@@ -1,6 +1,6 @@
 import React from 'react';
 import {Input,InputProps} from './input'
-import { RenderResult,render, fireEvent } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 
 
 const defaultProps:InputProps={
