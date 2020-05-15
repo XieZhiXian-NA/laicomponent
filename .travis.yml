@@ -4,8 +4,6 @@ node_js:
 cache:
   directories:
   - node_modules
-env:
-  - CI = true
 script:
   - npm run build-storybook
 deploy:
@@ -14,5 +12,5 @@ deploy:
     token: $github_token
     local_dir: storybook_static
     on:
-        branch: test1
+        branch: master
     

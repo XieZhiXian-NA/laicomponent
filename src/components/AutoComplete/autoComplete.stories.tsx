@@ -1,6 +1,6 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import AutoComplete,{DataSourceType} from './autoComplete'
+import AutoComplete from './autoComplete'
 
 
 // interface LakerPlayProps {
