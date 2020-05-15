@@ -11,6 +11,7 @@ deploy:
     cleanup: true
     token: $github_token
     local_dir: storybook_static
+    target-branch: gh-pages
     on:
         branch: test1
     
