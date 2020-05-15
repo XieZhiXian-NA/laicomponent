@@ -10,7 +10,7 @@ deploy:
     provider: pages
     cleanup: true
     token: $github_token
-    local_dir: storybook_static
+    local_dir: storybook-static
     target-branch: gh-pages
     on:
         branch: test1
