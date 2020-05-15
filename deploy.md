@@ -1,5 +1,15 @@
 # 规范代码提交
 
+## 上传之前，进行本地验证
+
+1. 在本项目下执行 npm link
+    创建软连接  node的全局node_modules----laicomponent
+2. 在测试项目中 npm link laicomponent
+   testLai的node_modules ------node全局node_modules------laicomponent
+3. 可在testLai的package.json中添加
+   "laicomponent":"0.1.0"依赖
+4. 可在testLai中引入组件库
+
 ## 发布到npm
 
 1.检测代码格式--lint
@@ -115,3 +125,43 @@
 
 1. 频繁的将软件的新版本，交付给质量团队或者用户
 2. 代码通过评审以后，自动部署到生产环境
+
+## travis-ci
+
+工作原理
+当git push后，travis-ci会检测并从github镜像拉取最新的项目
+执行npm install
+执行.travis.yml中的命令脚本（默认执行npm test）
+再将build生成的文件push到镜像中
+
+需要使用"prepublishOnly",只会在publish时，执行
+prepublish/prepare会在install/publish时执行两次
+
+## 部署到githubPages
+
+1. 项目部署成功后，在github镜像setting中选择分支
+2. [https://xiezhixian-na.github.io/laicomponent/]
+
+```js
+language: node_js
+node_js:
+  - "stable"
+cache:
+//使用缓存，不用每次安装都install
+  directories:
+  - node_modules
+env:
+  - CI=true
+script:
+  - npm run build-storybook
+deploy:
+ //部署到github-pages中
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  //将生成的storybook-static上传到gh-pages分支
+  local_dir: storybook-static
+  on:
+    //项目代码位于test1镜像中
+    branch: test1
+```
