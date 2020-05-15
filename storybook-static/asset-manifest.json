@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/XieZhiXian-NA/laicomponent/static/css/main.17833cd5.chunk.css",
+    "main.js": "/XieZhiXian-NA/laicomponent/main.67121054d99e65fa2aab.bundle.js",
+    "main.css.map": "/XieZhiXian-NA/laicomponent/static/css/main.17833cd5.chunk.css.map",
+    "main.js.map": "/XieZhiXian-NA/laicomponent/main.67121054d99e65fa2aab.bundle.js.map",
+    "runtime~main.js": "/XieZhiXian-NA/laicomponent/runtime~main.67121054d99e65fa2aab.bundle.js",
+    "runtime~main.js.map": "/XieZhiXian-NA/laicomponent/runtime~main.67121054d99e65fa2aab.bundle.js.map",
+    "vendors~main.css": "/XieZhiXian-NA/laicomponent/static/css/vendors~main.f8f248a5.chunk.css",
+    "vendors~main.js": "/XieZhiXian-NA/laicomponent/vendors~main.67121054d99e65fa2aab.bundle.js",
+    "vendors~main.css.map": "/XieZhiXian-NA/laicomponent/static/css/vendors~main.f8f248a5.chunk.css.map",
+    "vendors~main.js.map": "/XieZhiXian-NA/laicomponent/vendors~main.67121054d99e65fa2aab.bundle.js.map",
+    "iframe.html": "/XieZhiXian-NA/laicomponent/iframe.html",
+    "precache-manifest.c9e66338b456a2ff7a6d75d2028a5873.js": "/XieZhiXian-NA/laicomponent/precache-manifest.c9e66338b456a2ff7a6d75d2028a5873.js",
+    "service-worker.js": "/XieZhiXian-NA/laicomponent/service-worker.js",
+    "vendors~main.67121054d99e65fa2aab.bundle.js.LICENSE.txt": "/XieZhiXian-NA/laicomponent/vendors~main.67121054d99e65fa2aab.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.67121054d99e65fa2aab.bundle.js",
+    "static/css/vendors~main.f8f248a5.chunk.css",
+    "vendors~main.67121054d99e65fa2aab.bundle.js",
+    "static/css/main.17833cd5.chunk.css",
+    "main.67121054d99e65fa2aab.bundle.js"
+  ]
+}

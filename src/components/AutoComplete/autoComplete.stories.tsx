@@ -44,16 +44,16 @@ const handleFetch = (query:string)=>{
                return items.slice(0,10).map( (item:any) =>({value:item.login,...item}))
            })
 }
-const renderOption = (item:DataSourceType)=>{
-    const itemWithGithub = item as DataSourceType<GithubUserProps>;
-    return (
-        <div>
-            <h2>Name:{itemWithGithub.login}</h2>
-            <h4>url:{itemWithGithub.url}</h4>
-        </div>
+// const renderOption = (item:DataSourceType)=>{
+//     const itemWithGithub = item as DataSourceType<GithubUserProps>;
+//     return (
+//         <div>
+//             <h2>Name:{itemWithGithub.login}</h2>
+//             <h4>url:{itemWithGithub.url}</h4>
+//         </div>
     
-    )
-}
+//     )
+// }
 return (
     <div>
         <AutoComplete 
