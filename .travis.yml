@@ -7,11 +7,11 @@ cache:
 script:
   - npm run build-storybook
 deploy:
-    provider: pages
-    cleanup: true
-    token: $github_token
-    local_dir: storybook-static
-    target_branch: gh-pages
-    on:
-        branch: test1
+  provider: pages
+  cleanup: true
+  token: $github_token
+  local_dir: storybook-static
+  target_branch: gh-pages
+  on:
+      branch: test1
     
