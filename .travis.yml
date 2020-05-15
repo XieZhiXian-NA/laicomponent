@@ -10,8 +10,8 @@ script:
   - npm run build-storybook
 deploy:
     provider: pages
-    skip_cleanup: true
-    github_token: $github_token
+    cleanup: true
+    token: $github_token
     local_dir: storybook_static
     on:
         branch: test1
