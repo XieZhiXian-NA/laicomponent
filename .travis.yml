@@ -13,5 +13,5 @@ deploy:
   local_dir: storybook-static
   target_branch: gh-pages
   on:
-      branch: test1
+    branch: test1
     
